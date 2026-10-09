@@ -1,9 +1,20 @@
- Bronvermelding en GenAI verantwoording
+Bronvermelding en GenAI Verantwoording
+Inzet van GenAI
+Gedurende het gehele ontwikkeltraject van het Smart App Platform is GenAI gebruikt als primaire programmeerpartner en ontwikkeltool voor:
 
-Onderzoekend vermogen: inzet van Generative AI
-Voor de ontwikkeling en verfijning van het Smart App project is gebruikgemaakt van Generative AI als onderzoek- en sparringsplatform. 
+1. Sprint 1 (Weerstation): 
+   - Opzet en validatie van de wiskundige berekeningen.
+   - Structureren van de beslisboom (if/elif/else logica) en continue berekening van het doorlopend gemiddelde.
+2. Sprint 2 (Smart App Controller):
+   - Implementatie van de file I/O logica voor het inlezen van input.txt en schrijven naar output.txt.
+   - Bouwen van de regels voor actuatoraansturing.
+   - Opzetten van de overwrite settings functie met de specifieke retourcodes 0, -1, -3.
+3. Sprint 3 (Platform, REST API en Exceptions):
+   - Integratie van de Open-Meteo REST API via urllib.request en dataparsing met json loads.
+   - Fouthandeling om crashes te voorkomen.
+4. Debugging en Refactoring:
+   - Analyseren en oplossen van errors.
 
-Toepassing:
-1. **Module-architectuur & Imports**: Oplossen van import- en naamgevingsconflicten tussen 'weerstation', 'smart_app_controller' en het platform 'main.py'.
-2. **REST API-integratie**: Syntax en structuur van 'urllib.request' en 'json.loads()' conform de PROG-lesstof.
-3. **Robuustheid & Exception Handling**: Implementatie van 'try/except'-blokken voor bestandsinvoer en numerieke invoer.
+ Chatverantwoording
+AI platform: Google Gemini
+
