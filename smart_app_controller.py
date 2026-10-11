@@ -38,7 +38,7 @@ def auto_bereken(inputfile, outputfile):
             temp_outside = float(delen[3])
             precip = float(delen[4])
 
-            # CV ketel stand bepalen
+            
             verschil = temp_setpoint - temp_outside
             if verschil >= 20:
                 cv = 100
@@ -47,12 +47,12 @@ def auto_bereken(inputfile, outputfile):
             else:
                 cv = 0
 
-            # Ventilatiestand bepalen (maximaal 4)
+            
             ventilatie = num_people + 1
             if ventilatie > 4:
                 ventilatie = 4
 
-            # Bewatering (True bij neerslag < 3mm)
+            
             bewatering = precip < 3.0
 
             uit_file.write(f"{datum};{cv};{ventilatie};{bewatering}\n")
