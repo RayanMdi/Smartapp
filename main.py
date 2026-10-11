@@ -5,7 +5,7 @@ import smart_app_controller
 
 
 def haal_live_weer_utrecht():
-    """Haalt actuele weergegevens op via een GET request naar de Open-Meteo REST API."""
+   
     url = "https://api.open-meteo.com/v1/forecast?latitude=52.0908&longitude=5.1222&current=temperature_2m,wind_speed_10m"
     print("\nLive weergegevens ophalen voor Utrecht via API...")
 
@@ -15,7 +15,7 @@ def haal_live_weer_utrecht():
             data_bytes = response.read()
             data_tekst = data_bytes.decode("utf-8")
 
-            # JSON parsen naar een Python dictionary (PROG7 / Spronck H13)
+       
             weer_dict = json.loads(data_tekst)
 
             huidig = weer_dict.get("current", {})
@@ -37,7 +37,7 @@ def haal_live_weer_utrecht():
 
 
 def hoofdmenu():
-    """Platform controller met keuzemenu (while-loop en condities)."""
+   
     while True:
         print("\n==================================")
         print("    SMART APP PLATFORM HOOFDMENU  ")
